@@ -1,0 +1,1276 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Login"
+provides-nominal:
+- "5Maruf5LoginC"
+provides-member:
+- ["5Maruf5LoginC", ""]
+provides-dynamic-lookup:
+- "loginButton"
+- "loginButtonDidLogOut"
+- "moveToTabBar"
+- "sign"
+- "viewDidLoad"
+depends-top-level:
+- !private "!="
+- !private "+"
+- !private "-"
+- "AnyObject"
+- !private "AppDelegate"
+- !private "Array"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- !private "CGRect"
+- "CastingPrecedence"
+- !private "Dictionary"
+- "Error"
+- !private "FBSDKAccessToken"
+- !private "FBSDKGraphRequest"
+- "FBSDKLoginButton"
+- "FBSDKLoginButtonDelegate"
+- "FBSDKLoginManagerLoginResult"
+- !private "FIRAuth"
+- !private "FIRFacebookAuthProvider"
+- !private "FIRGoogleAuthProvider"
+- "GIDGoogleUser"
+- "GIDSignIn"
+- !private "GIDSignInButton"
+- "GIDSignInDelegate"
+- "GIDSignInUIDelegate"
+- "Login"
+- "String"
+- !private "StringLiteralType"
+- !private "UIApplication"
+- "UIButton"
+- !private "UIStoryboard"
+- !private "UITabBarController"
+- "UIViewController"
+- !private "print"
+depends-member:
+- !private ["5Maruf11AppDelegateC", "deinit"]
+- !private ["5Maruf11AppDelegateC", "window"]
+- !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "readPermissions"]
+- !private ["So15CALayerDelegateP", "rootViewController"]
+- !private ["SC6CGRectV", "init"]
+- !private ["SC6CGRectV", "width"]
+- !private ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "FBSDKAccessToken"]
+- !private ["s7CVarArgP", "FBSDKGraphRequest"]
+- !private ["s7CVarArgP", "FBSDKLoginButton"]
+- !private ["s7CVarArgP", "FIRAuth"]
+- !private ["s7CVarArgP", "FIRFacebookAuthProvider"]
+- !private ["s7CVarArgP", "FIRGoogleAuthProvider"]
+- !private ["s7CVarArgP", "GIDSignIn"]
+- !private ["s7CVarArgP", "GIDSignInButton"]
+- !private ["s7CVarArgP", "UIApplication"]
+- !private ["s7CVarArgP", "UIStoryboard"]
+- !private ["s7CVarArgP", "accessToken"]
+- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "authentication"]
+- !private ["s7CVarArgP", "credential"]
+- !private ["s7CVarArgP", "current"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "idToken"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- ["s7CVarArgP", "loginButton"]
+- ["s7CVarArgP", "loginButtonDidLogOut"]
+- ["s7CVarArgP", "loginButtonWillLogin"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "readPermissions"]
+- !private ["s7CVarArgP", "rootViewController"]
+- !private ["s7CVarArgP", "setupFacebookButtons"]
+- !private ["s7CVarArgP", "setupGoogleButtons"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "showEmailAddress"]
+- ["s7CVarArgP", "sign"]
+- ["s7CVarArgP", "signIn"]
+- ["s7CVarArgP", "signInWillDispatch"]
+- !private ["s7CVarArgP", "signOut"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "tokenString"]
+- !private ["s7CVarArgP", "uiDelegate"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "window"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "FBSDKAccessToken"]
+- !private ["s28CustomDebugStringConvertibleP", "FBSDKGraphRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "FBSDKLoginButton"]
+- !private ["s28CustomDebugStringConvertibleP", "FIRAuth"]
+- !private ["s28CustomDebugStringConvertibleP", "FIRFacebookAuthProvider"]
+- !private ["s28CustomDebugStringConvertibleP", "FIRGoogleAuthProvider"]
+- !private ["s28CustomDebugStringConvertibleP", "GIDSignIn"]
+- !private ["s28CustomDebugStringConvertibleP", "GIDSignInButton"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
+- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
+- !private ["s28CustomDebugStringConvertibleP", "accessToken"]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "authentication"]
+- !private ["s28CustomDebugStringConvertibleP", "credential"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "idToken"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- ["s28CustomDebugStringConvertibleP", "loginButton"]
+- ["s28CustomDebugStringConvertibleP", "loginButtonDidLogOut"]
+- ["s28CustomDebugStringConvertibleP", "loginButtonWillLogin"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "readPermissions"]
+- !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "setupFacebookButtons"]
+- !private ["s28CustomDebugStringConvertibleP", "setupGoogleButtons"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "showEmailAddress"]
+- ["s28CustomDebugStringConvertibleP", "sign"]
+- ["s28CustomDebugStringConvertibleP", "signIn"]
+- ["s28CustomDebugStringConvertibleP", "signInWillDispatch"]
+- !private ["s28CustomDebugStringConvertibleP", "signOut"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "tokenString"]
+- !private ["s28CustomDebugStringConvertibleP", "uiDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "window"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "FBSDKAccessToken"]
+- !private ["s23CustomStringConvertibleP", "FBSDKGraphRequest"]
+- !private ["s23CustomStringConvertibleP", "FBSDKLoginButton"]
+- !private ["s23CustomStringConvertibleP", "FIRAuth"]
+- !private ["s23CustomStringConvertibleP", "FIRFacebookAuthProvider"]
+- !private ["s23CustomStringConvertibleP", "FIRGoogleAuthProvider"]
+- !private ["s23CustomStringConvertibleP", "GIDSignIn"]
+- !private ["s23CustomStringConvertibleP", "GIDSignInButton"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
+- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "accessToken"]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "authentication"]
+- !private ["s23CustomStringConvertibleP", "credential"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "idToken"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- ["s23CustomStringConvertibleP", "loginButton"]
+- ["s23CustomStringConvertibleP", "loginButtonDidLogOut"]
+- ["s23CustomStringConvertibleP", "loginButtonWillLogin"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "readPermissions"]
+- !private ["s23CustomStringConvertibleP", "rootViewController"]
+- !private ["s23CustomStringConvertibleP", "setupFacebookButtons"]
+- !private ["s23CustomStringConvertibleP", "setupGoogleButtons"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "showEmailAddress"]
+- ["s23CustomStringConvertibleP", "sign"]
+- ["s23CustomStringConvertibleP", "signIn"]
+- ["s23CustomStringConvertibleP", "signInWillDispatch"]
+- !private ["s23CustomStringConvertibleP", "signOut"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "tokenString"]
+- !private ["s23CustomStringConvertibleP", "uiDelegate"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "window"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "width"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EquatableP", "CGRect"]
+- !private ["s9EquatableP", "FBSDKAccessToken"]
+- !private ["s9EquatableP", "FBSDKGraphRequest"]
+- !private ["s9EquatableP", "FBSDKLoginButton"]
+- !private ["s9EquatableP", "FIRAuth"]
+- !private ["s9EquatableP", "FIRFacebookAuthProvider"]
+- !private ["s9EquatableP", "FIRGoogleAuthProvider"]
+- !private ["s9EquatableP", "GIDSignIn"]
+- !private ["s9EquatableP", "GIDSignInButton"]
+- !private ["s9EquatableP", "UIApplication"]
+- !private ["s9EquatableP", "UIStoryboard"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "accessToken"]
+- !private ["s9EquatableP", "addSubview"]
+- !private ["s9EquatableP", "auth"]
+- !private ["s9EquatableP", "authentication"]
+- !private ["s9EquatableP", "credential"]
+- !private ["s9EquatableP", "current"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "frame"]
+- !private ["s9EquatableP", "idToken"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "instantiateViewController"]
+- ["s9EquatableP", "loginButton"]
+- ["s9EquatableP", "loginButtonDidLogOut"]
+- ["s9EquatableP", "loginButtonWillLogin"]
+- !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "readPermissions"]
+- !private ["s9EquatableP", "rootViewController"]
+- !private ["s9EquatableP", "setupFacebookButtons"]
+- !private ["s9EquatableP", "setupGoogleButtons"]
+- !private ["s9EquatableP", "shared"]
+- !private ["s9EquatableP", "sharedInstance"]
+- !private ["s9EquatableP", "showEmailAddress"]
+- ["s9EquatableP", "sign"]
+- ["s9EquatableP", "signIn"]
+- ["s9EquatableP", "signInWillDispatch"]
+- !private ["s9EquatableP", "signOut"]
+- !private ["s9EquatableP", "start"]
+- !private ["s9EquatableP", "storyboard"]
+- !private ["s9EquatableP", "tokenString"]
+- !private ["s9EquatableP", "uiDelegate"]
+- !private ["s9EquatableP", "view"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "width"]
+- !private ["s9EquatableP", "window"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So16FBSDKAccessTokenC", "current"]
+- !private ["So16FBSDKAccessTokenC", "tokenString"]
+- !private ["So11FBSDKButtonC", "delegate"]
+- !private ["So11FBSDKButtonC", "frame"]
+- !private ["So11FBSDKButtonC", "init"]
+- !private ["So11FBSDKButtonC", "readPermissions"]
+- !private ["So12FBSDKCopyingP", "current"]
+- !private ["So12FBSDKCopyingP", "tokenString"]
+- !private ["So17FBSDKGraphRequestC", "init"]
+- !private ["So17FBSDKGraphRequestC", "start"]
+- !private ["So16FBSDKLoginButtonC", "delegate"]
+- !private ["So16FBSDKLoginButtonC", "frame"]
+- !private ["So16FBSDKLoginButtonC", "init"]
+- !private ["So16FBSDKLoginButtonC", "readPermissions"]
+- !private ["So24FBSDKLoginButtonDelegateP", "CGRect"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FBSDKAccessToken"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FBSDKGraphRequest"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FBSDKLoginButton"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FIRAuth"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FIRFacebookAuthProvider"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FIRGoogleAuthProvider"]
+- !private ["So24FBSDKLoginButtonDelegateP", "GIDSignIn"]
+- !private ["So24FBSDKLoginButtonDelegateP", "GIDSignInButton"]
+- !private ["So24FBSDKLoginButtonDelegateP", "UIApplication"]
+- !private ["So24FBSDKLoginButtonDelegateP", "UIStoryboard"]
+- ["So24FBSDKLoginButtonDelegateP", "loginButton"]
+- ["So24FBSDKLoginButtonDelegateP", "loginButtonDidLogOut"]
+- ["So24FBSDKLoginButtonDelegateP", "loginButtonWillLogin"]
+- !private ["So24FBSDKLoginButtonDelegateP", "present"]
+- !private ["So24FBSDKLoginButtonDelegateP", "print"]
+- !private ["So24FBSDKLoginButtonDelegateP", "setupFacebookButtons"]
+- !private ["So24FBSDKLoginButtonDelegateP", "setupGoogleButtons"]
+- !private ["So24FBSDKLoginButtonDelegateP", "showEmailAddress"]
+- ["So24FBSDKLoginButtonDelegateP", "sign"]
+- ["So24FBSDKLoginButtonDelegateP", "signIn"]
+- ["So24FBSDKLoginButtonDelegateP", "signInWillDispatch"]
+- !private ["So24FBSDKLoginButtonDelegateP", "storyboard"]
+- !private ["So24FBSDKLoginButtonDelegateP", "view"]
+- ["So24FBSDKLoginButtonDelegateP", ""]
+- !private ["So7FIRAuthC", "auth"]
+- !private ["So7FIRAuthC", "signIn"]
+- !private ["So23FIRFacebookAuthProviderC", "credential"]
+- !private ["So21FIRGoogleAuthProviderC", "credential"]
+- !private ["So17GIDAuthenticationC", "accessToken"]
+- !private ["So17GIDAuthenticationC", "idToken"]
+- !private ["So13GIDGoogleUserC", "authentication"]
+- !private ["So9GIDSignInC", "delegate"]
+- !private ["So9GIDSignInC", "sharedInstance"]
+- !private ["So9GIDSignInC", "signOut"]
+- !private ["So9GIDSignInC", "uiDelegate"]
+- !private ["So15GIDSignInButtonC", "frame"]
+- !private ["So15GIDSignInButtonC", "init"]
+- !private ["So17GIDSignInDelegateP", "CGRect"]
+- !private ["So17GIDSignInDelegateP", "FBSDKAccessToken"]
+- !private ["So17GIDSignInDelegateP", "FBSDKGraphRequest"]
+- !private ["So17GIDSignInDelegateP", "FBSDKLoginButton"]
+- !private ["So17GIDSignInDelegateP", "FIRAuth"]
+- !private ["So17GIDSignInDelegateP", "FIRFacebookAuthProvider"]
+- !private ["So17GIDSignInDelegateP", "FIRGoogleAuthProvider"]
+- !private ["So17GIDSignInDelegateP", "GIDSignIn"]
+- !private ["So17GIDSignInDelegateP", "GIDSignInButton"]
+- !private ["So17GIDSignInDelegateP", "UIApplication"]
+- !private ["So17GIDSignInDelegateP", "UIStoryboard"]
+- ["So17GIDSignInDelegateP", "loginButton"]
+- ["So17GIDSignInDelegateP", "loginButtonDidLogOut"]
+- ["So17GIDSignInDelegateP", "loginButtonWillLogin"]
+- !private ["So17GIDSignInDelegateP", "present"]
+- !private ["So17GIDSignInDelegateP", "print"]
+- !private ["So17GIDSignInDelegateP", "setupFacebookButtons"]
+- !private ["So17GIDSignInDelegateP", "setupGoogleButtons"]
+- !private ["So17GIDSignInDelegateP", "showEmailAddress"]
+- ["So17GIDSignInDelegateP", "sign"]
+- ["So17GIDSignInDelegateP", "signIn"]
+- ["So17GIDSignInDelegateP", "signInWillDispatch"]
+- !private ["So17GIDSignInDelegateP", "storyboard"]
+- !private ["So17GIDSignInDelegateP", "view"]
+- ["So17GIDSignInDelegateP", ""]
+- !private ["So19GIDSignInUIDelegateP", "CGRect"]
+- !private ["So19GIDSignInUIDelegateP", "FBSDKAccessToken"]
+- !private ["So19GIDSignInUIDelegateP", "FBSDKGraphRequest"]
+- !private ["So19GIDSignInUIDelegateP", "FBSDKLoginButton"]
+- !private ["So19GIDSignInUIDelegateP", "FIRAuth"]
+- !private ["So19GIDSignInUIDelegateP", "FIRFacebookAuthProvider"]
+- !private ["So19GIDSignInUIDelegateP", "FIRGoogleAuthProvider"]
+- !private ["So19GIDSignInUIDelegateP", "GIDSignIn"]
+- !private ["So19GIDSignInUIDelegateP", "GIDSignInButton"]
+- !private ["So19GIDSignInUIDelegateP", "UIApplication"]
+- !private ["So19GIDSignInUIDelegateP", "UIStoryboard"]
+- ["So19GIDSignInUIDelegateP", "loginButton"]
+- ["So19GIDSignInUIDelegateP", "loginButtonDidLogOut"]
+- ["So19GIDSignInUIDelegateP", "loginButtonWillLogin"]
+- !private ["So19GIDSignInUIDelegateP", "present"]
+- !private ["So19GIDSignInUIDelegateP", "print"]
+- !private ["So19GIDSignInUIDelegateP", "setupFacebookButtons"]
+- !private ["So19GIDSignInUIDelegateP", "setupGoogleButtons"]
+- !private ["So19GIDSignInUIDelegateP", "showEmailAddress"]
+- ["So19GIDSignInUIDelegateP", "sign"]
+- ["So19GIDSignInUIDelegateP", "signIn"]
+- ["So19GIDSignInUIDelegateP", "signInWillDispatch"]
+- !private ["So19GIDSignInUIDelegateP", "storyboard"]
+- !private ["So19GIDSignInUIDelegateP", "view"]
+- ["So19GIDSignInUIDelegateP", ""]
+- !private ["s8HashableP", "CGRect"]
+- !private ["s8HashableP", "FBSDKAccessToken"]
+- !private ["s8HashableP", "FBSDKGraphRequest"]
+- !private ["s8HashableP", "FBSDKLoginButton"]
+- !private ["s8HashableP", "FIRAuth"]
+- !private ["s8HashableP", "FIRFacebookAuthProvider"]
+- !private ["s8HashableP", "FIRGoogleAuthProvider"]
+- !private ["s8HashableP", "GIDSignIn"]
+- !private ["s8HashableP", "GIDSignInButton"]
+- !private ["s8HashableP", "UIApplication"]
+- !private ["s8HashableP", "UIStoryboard"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "accessToken"]
+- !private ["s8HashableP", "addSubview"]
+- !private ["s8HashableP", "auth"]
+- !private ["s8HashableP", "authentication"]
+- !private ["s8HashableP", "credential"]
+- !private ["s8HashableP", "current"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "frame"]
+- !private ["s8HashableP", "idToken"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "instantiateViewController"]
+- ["s8HashableP", "loginButton"]
+- ["s8HashableP", "loginButtonDidLogOut"]
+- ["s8HashableP", "loginButtonWillLogin"]
+- !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "readPermissions"]
+- !private ["s8HashableP", "rootViewController"]
+- !private ["s8HashableP", "setupFacebookButtons"]
+- !private ["s8HashableP", "setupGoogleButtons"]
+- !private ["s8HashableP", "shared"]
+- !private ["s8HashableP", "sharedInstance"]
+- !private ["s8HashableP", "showEmailAddress"]
+- ["s8HashableP", "sign"]
+- ["s8HashableP", "signIn"]
+- ["s8HashableP", "signInWillDispatch"]
+- !private ["s8HashableP", "signOut"]
+- !private ["s8HashableP", "start"]
+- !private ["s8HashableP", "storyboard"]
+- !private ["s8HashableP", "tokenString"]
+- !private ["s8HashableP", "uiDelegate"]
+- !private ["s8HashableP", "view"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["s8HashableP", "window"]
+- ["s8HashableP", ""]
+- ["5Maruf5LoginC", "AnyObject"]
+- !private ["5Maruf5LoginC", "AppDelegate"]
+- !private ["5Maruf5LoginC", "CGRect"]
+- ["5Maruf5LoginC", "Error"]
+- !private ["5Maruf5LoginC", "FBSDKAccessToken"]
+- !private ["5Maruf5LoginC", "FBSDKGraphRequest"]
+- ["5Maruf5LoginC", "FBSDKLoginButton"]
+- ["5Maruf5LoginC", "FBSDKLoginManagerLoginResult"]
+- !private ["5Maruf5LoginC", "FIRAuth"]
+- !private ["5Maruf5LoginC", "FIRFacebookAuthProvider"]
+- !private ["5Maruf5LoginC", "FIRGoogleAuthProvider"]
+- ["5Maruf5LoginC", "GIDGoogleUser"]
+- ["5Maruf5LoginC", "GIDSignIn"]
+- !private ["5Maruf5LoginC", "GIDSignInButton"]
+- ["5Maruf5LoginC", "String"]
+- !private ["5Maruf5LoginC", "UIApplication"]
+- ["5Maruf5LoginC", "UIButton"]
+- !private ["5Maruf5LoginC", "UIStoryboard"]
+- !private ["5Maruf5LoginC", "UITabBarController"]
+- !private ["5Maruf5LoginC", "UIViewController"]
+- ["5Maruf5LoginC", "deinit"]
+- ["5Maruf5LoginC", "dict"]
+- ["5Maruf5LoginC", "init"]
+- ["5Maruf5LoginC", "loginButton"]
+- ["5Maruf5LoginC", "loginButtonDidLogOut"]
+- ["5Maruf5LoginC", "loginButtonWillLogin"]
+- ["5Maruf5LoginC", "moveToTabBar"]
+- !private ["5Maruf5LoginC", "present"]
+- !private ["5Maruf5LoginC", "print"]
+- !private ["5Maruf5LoginC", "setupFacebookButtons"]
+- !private ["5Maruf5LoginC", "setupGoogleButtons"]
+- ["5Maruf5LoginC", "showEmailAddress"]
+- ["5Maruf5LoginC", "sign"]
+- ["5Maruf5LoginC", "signIn"]
+- ["5Maruf5LoginC", "signInWillDispatch"]
+- !private ["5Maruf5LoginC", "storyboard"]
+- !private ["5Maruf5LoginC", "view"]
+- ["5Maruf5LoginC", "viewDidLoad"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "CGRect"]
+- !private ["So8NSCodingP", "FBSDKAccessToken"]
+- !private ["So8NSCodingP", "FBSDKGraphRequest"]
+- !private ["So8NSCodingP", "FBSDKLoginButton"]
+- !private ["So8NSCodingP", "FIRAuth"]
+- !private ["So8NSCodingP", "FIRFacebookAuthProvider"]
+- !private ["So8NSCodingP", "FIRGoogleAuthProvider"]
+- !private ["So8NSCodingP", "GIDSignIn"]
+- !private ["So8NSCodingP", "GIDSignInButton"]
+- !private ["So8NSCodingP", "UIApplication"]
+- !private ["So8NSCodingP", "UIStoryboard"]
+- !private ["So8NSCodingP", "accessToken"]
+- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "authentication"]
+- !private ["So8NSCodingP", "current"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "idToken"]
+- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "loginButton"]
+- ["So8NSCodingP", "loginButtonDidLogOut"]
+- ["So8NSCodingP", "loginButtonWillLogin"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "readPermissions"]
+- !private ["So8NSCodingP", "rootViewController"]
+- !private ["So8NSCodingP", "setupFacebookButtons"]
+- !private ["So8NSCodingP", "setupGoogleButtons"]
+- !private ["So8NSCodingP", "showEmailAddress"]
+- ["So8NSCodingP", "sign"]
+- ["So8NSCodingP", "signIn"]
+- ["So8NSCodingP", "signInWillDispatch"]
+- !private ["So8NSCodingP", "storyboard"]
+- !private ["So8NSCodingP", "tokenString"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "current"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "tokenString"]
+- !private ["So26NSExtensionRequestHandlingP", "CGRect"]
+- !private ["So26NSExtensionRequestHandlingP", "FBSDKAccessToken"]
+- !private ["So26NSExtensionRequestHandlingP", "FBSDKGraphRequest"]
+- !private ["So26NSExtensionRequestHandlingP", "FBSDKLoginButton"]
+- !private ["So26NSExtensionRequestHandlingP", "FIRAuth"]
+- !private ["So26NSExtensionRequestHandlingP", "FIRFacebookAuthProvider"]
+- !private ["So26NSExtensionRequestHandlingP", "FIRGoogleAuthProvider"]
+- !private ["So26NSExtensionRequestHandlingP", "GIDSignIn"]
+- !private ["So26NSExtensionRequestHandlingP", "GIDSignInButton"]
+- !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
+- !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- ["So26NSExtensionRequestHandlingP", "loginButton"]
+- ["So26NSExtensionRequestHandlingP", "loginButtonDidLogOut"]
+- ["So26NSExtensionRequestHandlingP", "loginButtonWillLogin"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "setupFacebookButtons"]
+- !private ["So26NSExtensionRequestHandlingP", "setupGoogleButtons"]
+- !private ["So26NSExtensionRequestHandlingP", "showEmailAddress"]
+- ["So26NSExtensionRequestHandlingP", "sign"]
+- ["So26NSExtensionRequestHandlingP", "signIn"]
+- ["So26NSExtensionRequestHandlingP", "signInWillDispatch"]
+- !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "AnyObject"]
+- !private ["So8NSObjectC", "AppDelegate"]
+- !private ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "Error"]
+- !private ["So8NSObjectC", "FBSDKAccessToken"]
+- !private ["So8NSObjectC", "FBSDKGraphRequest"]
+- ["So8NSObjectC", "FBSDKLoginButton"]
+- ["So8NSObjectC", "FBSDKLoginManagerLoginResult"]
+- !private ["So8NSObjectC", "FIRAuth"]
+- !private ["So8NSObjectC", "FIRFacebookAuthProvider"]
+- !private ["So8NSObjectC", "FIRGoogleAuthProvider"]
+- ["So8NSObjectC", "GIDGoogleUser"]
+- ["So8NSObjectC", "GIDSignIn"]
+- !private ["So8NSObjectC", "GIDSignInButton"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIStoryboard"]
+- !private ["So8NSObjectC", "UITabBarController"]
+- !private ["So8NSObjectC", "UIViewController"]
+- !private ["So8NSObjectC", "accessToken"]
+- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "auth"]
+- !private ["So8NSObjectC", "authentication"]
+- !private ["So8NSObjectC", "credential"]
+- !private ["So8NSObjectC", "current"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "dict"]
+- !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "idToken"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- ["So8NSObjectC", "loginButton"]
+- ["So8NSObjectC", "loginButtonDidLogOut"]
+- ["So8NSObjectC", "loginButtonWillLogin"]
+- ["So8NSObjectC", "moveToTabBar"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "readPermissions"]
+- !private ["So8NSObjectC", "rootViewController"]
+- ["So8NSObjectC", "setupFacebookButtons"]
+- ["So8NSObjectC", "setupGoogleButtons"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "sharedInstance"]
+- ["So8NSObjectC", "showEmailAddress"]
+- ["So8NSObjectC", "sign"]
+- ["So8NSObjectC", "signIn"]
+- ["So8NSObjectC", "signInWillDispatch"]
+- !private ["So8NSObjectC", "signOut"]
+- !private ["So8NSObjectC", "start"]
+- !private ["So8NSObjectC", "storyboard"]
+- !private ["So8NSObjectC", "tokenString"]
+- !private ["So8NSObjectC", "uiDelegate"]
+- !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectC", "window"]
+- !private ["So16NSObjectProtocolP", "CGRect"]
+- !private ["So16NSObjectProtocolP", "FBSDKAccessToken"]
+- !private ["So16NSObjectProtocolP", "FBSDKGraphRequest"]
+- !private ["So16NSObjectProtocolP", "FBSDKLoginButton"]
+- !private ["So16NSObjectProtocolP", "FIRAuth"]
+- !private ["So16NSObjectProtocolP", "FIRFacebookAuthProvider"]
+- !private ["So16NSObjectProtocolP", "FIRGoogleAuthProvider"]
+- !private ["So16NSObjectProtocolP", "GIDSignIn"]
+- !private ["So16NSObjectProtocolP", "GIDSignInButton"]
+- !private ["So16NSObjectProtocolP", "UIApplication"]
+- !private ["So16NSObjectProtocolP", "UIStoryboard"]
+- !private ["So16NSObjectProtocolP", "accessToken"]
+- !private ["So16NSObjectProtocolP", "addSubview"]
+- !private ["So16NSObjectProtocolP", "auth"]
+- !private ["So16NSObjectProtocolP", "authentication"]
+- !private ["So16NSObjectProtocolP", "credential"]
+- !private ["So16NSObjectProtocolP", "current"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "frame"]
+- !private ["So16NSObjectProtocolP", "idToken"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- ["So16NSObjectProtocolP", "loginButton"]
+- ["So16NSObjectProtocolP", "loginButtonDidLogOut"]
+- ["So16NSObjectProtocolP", "loginButtonWillLogin"]
+- !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "readPermissions"]
+- !private ["So16NSObjectProtocolP", "rootViewController"]
+- !private ["So16NSObjectProtocolP", "setupFacebookButtons"]
+- !private ["So16NSObjectProtocolP", "setupGoogleButtons"]
+- !private ["So16NSObjectProtocolP", "shared"]
+- !private ["So16NSObjectProtocolP", "sharedInstance"]
+- !private ["So16NSObjectProtocolP", "showEmailAddress"]
+- ["So16NSObjectProtocolP", "sign"]
+- ["So16NSObjectProtocolP", "signIn"]
+- ["So16NSObjectProtocolP", "signInWillDispatch"]
+- !private ["So16NSObjectProtocolP", "signOut"]
+- !private ["So16NSObjectProtocolP", "start"]
+- !private ["So16NSObjectProtocolP", "storyboard"]
+- !private ["So16NSObjectProtocolP", "tokenString"]
+- !private ["So16NSObjectProtocolP", "uiDelegate"]
+- !private ["So16NSObjectProtocolP", "view"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "window"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "current"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "tokenString"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "delegate"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "frame"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "readPermissions"]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "readPermissions"]
+- !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "readPermissions"]
+- !private ["So12UIAppearanceP", "rootViewController"]
+- !private ["So21UIAppearanceContainerP", "CGRect"]
+- !private ["So21UIAppearanceContainerP", "FBSDKAccessToken"]
+- !private ["So21UIAppearanceContainerP", "FBSDKGraphRequest"]
+- !private ["So21UIAppearanceContainerP", "FBSDKLoginButton"]
+- !private ["So21UIAppearanceContainerP", "FIRAuth"]
+- !private ["So21UIAppearanceContainerP", "FIRFacebookAuthProvider"]
+- !private ["So21UIAppearanceContainerP", "FIRGoogleAuthProvider"]
+- !private ["So21UIAppearanceContainerP", "GIDSignIn"]
+- !private ["So21UIAppearanceContainerP", "GIDSignInButton"]
+- !private ["So21UIAppearanceContainerP", "UIApplication"]
+- !private ["So21UIAppearanceContainerP", "UIStoryboard"]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "loginButton"]
+- ["So21UIAppearanceContainerP", "loginButtonDidLogOut"]
+- ["So21UIAppearanceContainerP", "loginButtonWillLogin"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "readPermissions"]
+- !private ["So21UIAppearanceContainerP", "rootViewController"]
+- !private ["So21UIAppearanceContainerP", "setupFacebookButtons"]
+- !private ["So21UIAppearanceContainerP", "setupGoogleButtons"]
+- !private ["So21UIAppearanceContainerP", "showEmailAddress"]
+- ["So21UIAppearanceContainerP", "sign"]
+- ["So21UIAppearanceContainerP", "signIn"]
+- ["So21UIAppearanceContainerP", "signInWillDispatch"]
+- !private ["So21UIAppearanceContainerP", "storyboard"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So13UIApplicationC", "delegate"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So21UIApplicationDelegateP", "window"]
+- !private ["So8UIButtonC", "delegate"]
+- !private ["So8UIButtonC", "frame"]
+- !private ["So8UIButtonC", "init"]
+- !private ["So8UIButtonC", "readPermissions"]
+- !private ["So18UIContentContainerP", "CGRect"]
+- !private ["So18UIContentContainerP", "FBSDKAccessToken"]
+- !private ["So18UIContentContainerP", "FBSDKGraphRequest"]
+- !private ["So18UIContentContainerP", "FBSDKLoginButton"]
+- !private ["So18UIContentContainerP", "FIRAuth"]
+- !private ["So18UIContentContainerP", "FIRFacebookAuthProvider"]
+- !private ["So18UIContentContainerP", "FIRGoogleAuthProvider"]
+- !private ["So18UIContentContainerP", "GIDSignIn"]
+- !private ["So18UIContentContainerP", "GIDSignInButton"]
+- !private ["So18UIContentContainerP", "UIApplication"]
+- !private ["So18UIContentContainerP", "UIStoryboard"]
+- !private ["So18UIContentContainerP", "init"]
+- ["So18UIContentContainerP", "loginButton"]
+- ["So18UIContentContainerP", "loginButtonDidLogOut"]
+- ["So18UIContentContainerP", "loginButtonWillLogin"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "setupFacebookButtons"]
+- !private ["So18UIContentContainerP", "setupGoogleButtons"]
+- !private ["So18UIContentContainerP", "showEmailAddress"]
+- ["So18UIContentContainerP", "sign"]
+- ["So18UIContentContainerP", "signIn"]
+- ["So18UIContentContainerP", "signInWillDispatch"]
+- !private ["So18UIContentContainerP", "storyboard"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So9UIControlC", "delegate"]
+- !private ["So9UIControlC", "frame"]
+- !private ["So9UIControlC", "init"]
+- !private ["So9UIControlC", "readPermissions"]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "readPermissions"]
+- !private ["So17UICoordinateSpaceP", "rootViewController"]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "readPermissions"]
+- !private ["So13UIDynamicItemP", "rootViewController"]
+- !private ["So18UIFocusEnvironmentP", "CGRect"]
+- !private ["So18UIFocusEnvironmentP", "FBSDKAccessToken"]
+- !private ["So18UIFocusEnvironmentP", "FBSDKGraphRequest"]
+- !private ["So18UIFocusEnvironmentP", "FBSDKLoginButton"]
+- !private ["So18UIFocusEnvironmentP", "FIRAuth"]
+- !private ["So18UIFocusEnvironmentP", "FIRFacebookAuthProvider"]
+- !private ["So18UIFocusEnvironmentP", "FIRGoogleAuthProvider"]
+- !private ["So18UIFocusEnvironmentP", "GIDSignIn"]
+- !private ["So18UIFocusEnvironmentP", "GIDSignInButton"]
+- !private ["So18UIFocusEnvironmentP", "UIApplication"]
+- !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "loginButton"]
+- ["So18UIFocusEnvironmentP", "loginButtonDidLogOut"]
+- ["So18UIFocusEnvironmentP", "loginButtonWillLogin"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "readPermissions"]
+- !private ["So18UIFocusEnvironmentP", "rootViewController"]
+- !private ["So18UIFocusEnvironmentP", "setupFacebookButtons"]
+- !private ["So18UIFocusEnvironmentP", "setupGoogleButtons"]
+- !private ["So18UIFocusEnvironmentP", "showEmailAddress"]
+- ["So18UIFocusEnvironmentP", "sign"]
+- ["So18UIFocusEnvironmentP", "signIn"]
+- ["So18UIFocusEnvironmentP", "signInWillDispatch"]
+- !private ["So18UIFocusEnvironmentP", "storyboard"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "readPermissions"]
+- !private ["So11UIFocusItemP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
+- !private ["So30UIPasteConfigurationSupportingP", "FBSDKAccessToken"]
+- !private ["So30UIPasteConfigurationSupportingP", "FBSDKGraphRequest"]
+- !private ["So30UIPasteConfigurationSupportingP", "FBSDKLoginButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "FIRAuth"]
+- !private ["So30UIPasteConfigurationSupportingP", "FIRFacebookAuthProvider"]
+- !private ["So30UIPasteConfigurationSupportingP", "FIRGoogleAuthProvider"]
+- !private ["So30UIPasteConfigurationSupportingP", "GIDSignIn"]
+- !private ["So30UIPasteConfigurationSupportingP", "GIDSignInButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "loginButton"]
+- ["So30UIPasteConfigurationSupportingP", "loginButtonDidLogOut"]
+- ["So30UIPasteConfigurationSupportingP", "loginButtonWillLogin"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "readPermissions"]
+- !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "setupFacebookButtons"]
+- !private ["So30UIPasteConfigurationSupportingP", "setupGoogleButtons"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "showEmailAddress"]
+- ["So30UIPasteConfigurationSupportingP", "sign"]
+- ["So30UIPasteConfigurationSupportingP", "signIn"]
+- ["So30UIPasteConfigurationSupportingP", "signInWillDispatch"]
+- !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "window"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "AnyObject"]
+- !private ["So11UIResponderC", "AppDelegate"]
+- !private ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "Error"]
+- !private ["So11UIResponderC", "FBSDKAccessToken"]
+- !private ["So11UIResponderC", "FBSDKGraphRequest"]
+- ["So11UIResponderC", "FBSDKLoginButton"]
+- ["So11UIResponderC", "FBSDKLoginManagerLoginResult"]
+- !private ["So11UIResponderC", "FIRAuth"]
+- !private ["So11UIResponderC", "FIRFacebookAuthProvider"]
+- !private ["So11UIResponderC", "FIRGoogleAuthProvider"]
+- ["So11UIResponderC", "GIDGoogleUser"]
+- ["So11UIResponderC", "GIDSignIn"]
+- !private ["So11UIResponderC", "GIDSignInButton"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIStoryboard"]
+- !private ["So11UIResponderC", "UITabBarController"]
+- !private ["So11UIResponderC", "UIViewController"]
+- !private ["So11UIResponderC", "addSubview"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "dict"]
+- !private ["So11UIResponderC", "frame"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "loginButton"]
+- ["So11UIResponderC", "loginButtonDidLogOut"]
+- ["So11UIResponderC", "loginButtonWillLogin"]
+- ["So11UIResponderC", "moveToTabBar"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "readPermissions"]
+- !private ["So11UIResponderC", "rootViewController"]
+- ["So11UIResponderC", "setupFacebookButtons"]
+- ["So11UIResponderC", "setupGoogleButtons"]
+- !private ["So11UIResponderC", "shared"]
+- ["So11UIResponderC", "showEmailAddress"]
+- ["So11UIResponderC", "sign"]
+- ["So11UIResponderC", "signIn"]
+- ["So11UIResponderC", "signInWillDispatch"]
+- !private ["So11UIResponderC", "storyboard"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "CGRect"]
+- !private ["So30UIResponderStandardEditActionsP", "FBSDKAccessToken"]
+- !private ["So30UIResponderStandardEditActionsP", "FBSDKGraphRequest"]
+- !private ["So30UIResponderStandardEditActionsP", "FBSDKLoginButton"]
+- !private ["So30UIResponderStandardEditActionsP", "FIRAuth"]
+- !private ["So30UIResponderStandardEditActionsP", "FIRFacebookAuthProvider"]
+- !private ["So30UIResponderStandardEditActionsP", "FIRGoogleAuthProvider"]
+- !private ["So30UIResponderStandardEditActionsP", "GIDSignIn"]
+- !private ["So30UIResponderStandardEditActionsP", "GIDSignInButton"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
+- !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "loginButton"]
+- ["So30UIResponderStandardEditActionsP", "loginButtonDidLogOut"]
+- ["So30UIResponderStandardEditActionsP", "loginButtonWillLogin"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "readPermissions"]
+- !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "setupFacebookButtons"]
+- !private ["So30UIResponderStandardEditActionsP", "setupGoogleButtons"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "showEmailAddress"]
+- ["So30UIResponderStandardEditActionsP", "sign"]
+- ["So30UIResponderStandardEditActionsP", "signIn"]
+- ["So30UIResponderStandardEditActionsP", "signInWillDispatch"]
+- !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "window"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "frame"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "readPermissions"]
+- !private ["So16UIStateRestoringP", "CGRect"]
+- !private ["So16UIStateRestoringP", "FBSDKAccessToken"]
+- !private ["So16UIStateRestoringP", "FBSDKGraphRequest"]
+- !private ["So16UIStateRestoringP", "FBSDKLoginButton"]
+- !private ["So16UIStateRestoringP", "FIRAuth"]
+- !private ["So16UIStateRestoringP", "FIRFacebookAuthProvider"]
+- !private ["So16UIStateRestoringP", "FIRGoogleAuthProvider"]
+- !private ["So16UIStateRestoringP", "GIDSignIn"]
+- !private ["So16UIStateRestoringP", "GIDSignInButton"]
+- !private ["So16UIStateRestoringP", "UIApplication"]
+- !private ["So16UIStateRestoringP", "UIStoryboard"]
+- !private ["So16UIStateRestoringP", "init"]
+- ["So16UIStateRestoringP", "loginButton"]
+- ["So16UIStateRestoringP", "loginButtonDidLogOut"]
+- ["So16UIStateRestoringP", "loginButtonWillLogin"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "setupFacebookButtons"]
+- !private ["So16UIStateRestoringP", "setupGoogleButtons"]
+- !private ["So16UIStateRestoringP", "showEmailAddress"]
+- ["So16UIStateRestoringP", "sign"]
+- ["So16UIStateRestoringP", "signIn"]
+- ["So16UIStateRestoringP", "signInWillDispatch"]
+- !private ["So16UIStateRestoringP", "storyboard"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So18UITraitEnvironmentP", "CGRect"]
+- !private ["So18UITraitEnvironmentP", "FBSDKAccessToken"]
+- !private ["So18UITraitEnvironmentP", "FBSDKGraphRequest"]
+- !private ["So18UITraitEnvironmentP", "FBSDKLoginButton"]
+- !private ["So18UITraitEnvironmentP", "FIRAuth"]
+- !private ["So18UITraitEnvironmentP", "FIRFacebookAuthProvider"]
+- !private ["So18UITraitEnvironmentP", "FIRGoogleAuthProvider"]
+- !private ["So18UITraitEnvironmentP", "GIDSignIn"]
+- !private ["So18UITraitEnvironmentP", "GIDSignInButton"]
+- !private ["So18UITraitEnvironmentP", "UIApplication"]
+- !private ["So18UITraitEnvironmentP", "UIStoryboard"]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "loginButton"]
+- ["So18UITraitEnvironmentP", "loginButtonDidLogOut"]
+- ["So18UITraitEnvironmentP", "loginButtonWillLogin"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "readPermissions"]
+- !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So18UITraitEnvironmentP", "setupFacebookButtons"]
+- !private ["So18UITraitEnvironmentP", "setupGoogleButtons"]
+- !private ["So18UITraitEnvironmentP", "showEmailAddress"]
+- ["So18UITraitEnvironmentP", "sign"]
+- ["So18UITraitEnvironmentP", "signIn"]
+- ["So18UITraitEnvironmentP", "signInWillDispatch"]
+- !private ["So18UITraitEnvironmentP", "storyboard"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "readPermissions"]
+- !private ["So6UIViewC", "rootViewController"]
+- ["So16UIViewControllerC", "AnyObject"]
+- !private ["So16UIViewControllerC", "AppDelegate"]
+- !private ["So16UIViewControllerC", "CGRect"]
+- ["So16UIViewControllerC", "Error"]
+- !private ["So16UIViewControllerC", "FBSDKAccessToken"]
+- !private ["So16UIViewControllerC", "FBSDKGraphRequest"]
+- ["So16UIViewControllerC", "FBSDKLoginButton"]
+- ["So16UIViewControllerC", "FBSDKLoginManagerLoginResult"]
+- !private ["So16UIViewControllerC", "FIRAuth"]
+- !private ["So16UIViewControllerC", "FIRFacebookAuthProvider"]
+- !private ["So16UIViewControllerC", "FIRGoogleAuthProvider"]
+- ["So16UIViewControllerC", "GIDGoogleUser"]
+- ["So16UIViewControllerC", "GIDSignIn"]
+- !private ["So16UIViewControllerC", "GIDSignInButton"]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UIApplication"]
+- ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UIStoryboard"]
+- !private ["So16UIViewControllerC", "UITabBarController"]
+- !private ["So16UIViewControllerC", "UIViewController"]
+- ["So16UIViewControllerC", "dict"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "loginButton"]
+- ["So16UIViewControllerC", "loginButtonDidLogOut"]
+- ["So16UIViewControllerC", "loginButtonWillLogin"]
+- ["So16UIViewControllerC", "moveToTabBar"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "setupFacebookButtons"]
+- ["So16UIViewControllerC", "setupGoogleButtons"]
+- ["So16UIViewControllerC", "showEmailAddress"]
+- ["So16UIViewControllerC", "sign"]
+- ["So16UIViewControllerC", "signIn"]
+- ["So16UIViewControllerC", "signInWillDispatch"]
+- !private ["So16UIViewControllerC", "storyboard"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["So8UIWindowC", "rootViewController"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "readPermissions"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKAccessToken"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKGraphRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKLoginButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRAuth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRFacebookAuthProvider"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRGoogleAuthProvider"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GIDSignIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GIDSignInButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "accessToken"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "authentication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "credential"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "idToken"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "loginButton"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "loginButtonDidLogOut"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "loginButtonWillLogin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "readPermissions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setupFacebookButtons"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setupGoogleButtons"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showEmailAddress"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sign"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "signIn"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "signInWillDispatch"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "signOut"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tokenString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uiDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "5Maruf11AppDelegateC"
+- !private "12FacebookCore26AppEventParameterValueTypeP"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "SC6CGRectV"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So16FBSDKAccessTokenC"
+- !private "So11FBSDKButtonC"
+- !private "So12FBSDKCopyingP"
+- !private "So17FBSDKGraphRequestC"
+- !private "So16FBSDKLoginButtonC"
+- "So24FBSDKLoginButtonDelegateP"
+- !private "So7FIRAuthC"
+- !private "So23FIRFacebookAuthProviderC"
+- !private "So21FIRGoogleAuthProviderC"
+- !private "So17GIDAuthenticationC"
+- !private "So13GIDGoogleUserC"
+- !private "So9GIDSignInC"
+- !private "So15GIDSignInButtonC"
+- "So17GIDSignInDelegateP"
+- "So19GIDSignInUIDelegateP"
+- "s8HashableP"
+- "5Maruf5LoginC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
+- !private "So21UIApplicationDelegateP"
+- !private "So8UIButtonC"
+- "So18UIContentContainerP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So8UIWindowC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "04e82142e71d0d6ca3608f9a4e82df4c"

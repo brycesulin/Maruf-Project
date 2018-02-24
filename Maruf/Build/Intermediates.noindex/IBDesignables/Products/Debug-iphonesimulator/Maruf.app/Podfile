@@ -1,0 +1,12 @@
+target 'Maruf' do
+use_frameworks!
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
+pod 'FBSDKShareKit'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
+pod 'GoogleAPIClientForREST/Calendar', '~> 1.2.1'
+end
