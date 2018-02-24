@@ -3,11 +3,11 @@ iOS School Project
 
 Screenshots:
 
-<img width="396" alt="screen shot 2017-12-10 at 8 20 56 am" src="https://user-images.githubusercontent.com/20143504/33805854-c3a10432-dd84-11e7-913d-e9ba9d08f954.png">
+<img width="379" alt="screen shot 2018-02-24 at 7 23 02 am" src="https://user-images.githubusercontent.com/20143504/36630911-fd095284-1933-11e8-8470-fc47d61d0434.png">
 
 <img width="395" alt="screen shot 2017-12-10 at 8 21 14 am" src="https://user-images.githubusercontent.com/20143504/33805859-c789e1a4-dd84-11e7-9136-7c5c30094163.png">
 
-<img width="391" alt="screen shot 2017-12-10 at 8 21 42 am" src="https://user-images.githubusercontent.com/20143504/33805861-cb24d558-dd84-11e7-86dc-22f3ee2b2c5a.png">
+<img width="375" alt="screen shot 2018-02-24 at 7 23 44 am" src="https://user-images.githubusercontent.com/20143504/36630912-0cecb696-1934-11e8-9dc4-178c081c6bc2.png">
 
 <img width="388" alt="screen shot 2017-12-10 at 8 21 54 am" src="https://user-images.githubusercontent.com/20143504/33805864-ceec8578-dd84-11e7-9af0-7ae0d211dec2.png">
 
