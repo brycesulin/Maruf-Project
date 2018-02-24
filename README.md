@@ -9,7 +9,7 @@ Screenshots:
 
 <img width="393" alt="screen shot 2018-02-24 at 7 30 33 am" src="https://user-images.githubusercontent.com/20143504/36630941-cdfb591e-1934-11e8-8726-702e9ffc42bc.png">
 
-<img width="388" alt="screen shot 2017-12-10 at 8 21 54 am" src="https://user-images.githubusercontent.com/20143504/33805864-ceec8578-dd84-11e7-9af0-7ae0d211dec2.png">
+<img width="397" alt="screen shot 2018-02-24 at 7 30 46 am" src="https://user-images.githubusercontent.com/20143504/36630948-ebe8e342-1934-11e8-8d56-f0c2526661bc.png">
 
 <img width="396" alt="screen shot 2017-12-10 at 8 22 07 am" src="https://user-images.githubusercontent.com/20143504/33805865-d2deb7f0-dd84-11e7-9a25-ace1f8a5a79f.png">
 
