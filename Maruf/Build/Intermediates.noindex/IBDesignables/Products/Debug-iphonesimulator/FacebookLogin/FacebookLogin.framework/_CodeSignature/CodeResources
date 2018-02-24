@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/FacebookLogin-Swift.h</key>
 		<data>
-		q4/mDdlw8cV0imA4Cfon/xLrtZM=
+		WICIlUKpfQEE+47Nhd9/oAu/Ets=
 		</data>
 		<key>Headers/FacebookLogin-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Mvnb47WUWlqRJVUgWqiA3Ev2zuc=
+		/UkebFQ/G+YUGJNp94wSPW6Lo+8=
 		</data>
 		<key>Modules/FacebookLogin.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		BHQqttrmJ4dsDqhUpyKhkUaAUqM=
+		93culabsrN19fyRQ/w9/QpJk3uI=
 		</data>
 		<key>Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		XKNRGnzVKXsKNKDVFQLS0N9BeJs=
+		wStF3ULV3sR37vSxGVTLyYysjHE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q4/mDdlw8cV0imA4Cfon/xLrtZM=
+			WICIlUKpfQEE+47Nhd9/oAu/Ets=
 			</data>
 			<key>hash2</key>
 			<data>
-			lctuAJXIc+RdH2KTq2b7ICl26mEV47F1D7eOpNo31AY=
+			Klp6xVvvSDvxMmbYYGA68nwGMkcithprOflhFc9Cfhc=
 			</data>
 		</dict>
 		<key>Headers/FacebookLogin-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BHQqttrmJ4dsDqhUpyKhkUaAUqM=
+			93culabsrN19fyRQ/w9/QpJk3uI=
 			</data>
 			<key>hash2</key>
 			<data>
-			GMaZWrPD91xsRn32zksInm7MkGrPC6NjKY7AsmcF9VE=
+			00tmtC7IB5FI3Wvjhe3ebupErGsu0qWHZTB5eip+lNE=
 			</data>
 		</dict>
 		<key>Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XKNRGnzVKXsKNKDVFQLS0N9BeJs=
+			wStF3ULV3sR37vSxGVTLyYysjHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			B97vT+rQ2pSTRajOadXBWvQ0azt2NT6gOh/jXnz3kE0=
+			bKEmQysJBu1JfaB1HF+Pb5pnauNSA0xDXmkhoKCUd6Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

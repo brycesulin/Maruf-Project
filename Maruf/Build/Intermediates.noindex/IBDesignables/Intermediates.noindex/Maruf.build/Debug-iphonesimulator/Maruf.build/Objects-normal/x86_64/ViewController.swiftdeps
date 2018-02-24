@@ -11,6 +11,7 @@ provides-member:
 - ["10Foundation4DateV", "toString"]
 provides-dynamic-lookup:
 - "numberOfSections"
+- "prepare"
 - "tableView"
 - "tableview"
 - "viewDidLoad"
@@ -30,11 +31,13 @@ depends-top-level:
 - "Int"
 - !private "JSONSerialization"
 - !private "Locale"
+- !private "ShowDetailsController"
 - "String"
 - !private "StringLiteralType"
 - !private "TimeZone"
 - !private "UIImage"
 - "UIImageView"
+- "UIStoryboardSegue"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewDataSource"
@@ -62,6 +65,7 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "item"]
 - !private ["s23BidirectionalCollectionP", "locationOfEvent"]
+- !private ["s23BidirectionalCollectionP", "row"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["s23BidirectionalCollectionP", "titleOfEvent"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -74,6 +78,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "descLabel"]
 - !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "indexPathForSelectedRow"]
 - !private ["So15CALayerDelegateP", "locationLabel"]
 - !private ["So15CALayerDelegateP", "print"]
 - !private ["So15CALayerDelegateP", "reloadData"]
@@ -101,11 +106,14 @@ depends-member:
 - !private ["s7CVarArgP", "dequeueReusableCell"]
 - !private ["s7CVarArgP", "descLabel"]
 - !private ["s7CVarArgP", "descOfEvent"]
+- !private ["s7CVarArgP", "destination"]
+- !private ["s7CVarArgP", "event"]
 - !private ["s7CVarArgP", "events"]
 - !private ["s7CVarArgP", "fetchEvents"]
 - !private ["s7CVarArgP", "image"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["s7CVarArgP", "indexPathForSelectedRow"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "jsonObject"]
 - !private ["s7CVarArgP", "locale"]
@@ -114,6 +122,7 @@ depends-member:
 - !private ["s7CVarArgP", "main"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
+- !private ["s7CVarArgP", "performSegue"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "resume"]
@@ -152,11 +161,13 @@ depends-member:
 - !private ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "item"]
 - !private ["s10CollectionP", "locationOfEvent"]
+- !private ["s10CollectionP", "row"]
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10CollectionP", "titleOfEvent"]
 - !private ["s10ComparableP", "DateFormatter"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "item"]
+- !private ["s10ComparableP", "row"]
 - !private ["s10ComparableP", "toString"]
 - !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
@@ -180,11 +191,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "descLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "descOfEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "event"]
 - !private ["s28CustomDebugStringConvertibleP", "events"]
 - !private ["s28CustomDebugStringConvertibleP", "fetchEvents"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "indexPathForSelectedRow"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "item"]
 - !private ["s28CustomDebugStringConvertibleP", "jsonObject"]
@@ -194,9 +208,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "performSegue"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDragging"]
@@ -239,6 +255,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "item"]
 - !private ["s17CustomReflectableP", "locationOfEvent"]
+- !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "titleOfEvent"]
 - !private ["s17CustomReflectableP", "toString"]
@@ -265,11 +282,14 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "descLabel"]
 - !private ["s23CustomStringConvertibleP", "descOfEvent"]
+- !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "event"]
 - !private ["s23CustomStringConvertibleP", "events"]
 - !private ["s23CustomStringConvertibleP", "fetchEvents"]
 - !private ["s23CustomStringConvertibleP", "image"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["s23CustomStringConvertibleP", "indexPathForSelectedRow"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "item"]
 - !private ["s23CustomStringConvertibleP", "jsonObject"]
@@ -279,9 +299,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "main"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
+- !private ["s23CustomStringConvertibleP", "performSegue"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "row"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDragging"]
@@ -327,6 +349,7 @@ depends-member:
 - !private ["s9DecodableP", "count"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "item"]
+- !private ["s9DecodableP", "row"]
 - !private ["s9DecodableP", "subscript"]
 - !private ["s9DecodableP", "toString"]
 - !private ["s10DictionaryV", "subscript"]
@@ -340,6 +363,7 @@ depends-member:
 - !private ["s9EncodableP", "count"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "item"]
+- !private ["s9EncodableP", "row"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EncodableP", "toString"]
 - !private ["s9EquatableP", "DateFormatter"]
@@ -363,11 +387,14 @@ depends-member:
 - !private ["s9EquatableP", "dequeueReusableCell"]
 - !private ["s9EquatableP", "descLabel"]
 - !private ["s9EquatableP", "descOfEvent"]
+- !private ["s9EquatableP", "destination"]
+- !private ["s9EquatableP", "event"]
 - !private ["s9EquatableP", "events"]
 - !private ["s9EquatableP", "fetchEvents"]
 - !private ["s9EquatableP", "image"]
 - ["s9EquatableP", "indexPathForPreferredFocusedView"]
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["s9EquatableP", "indexPathForSelectedRow"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "item"]
 - !private ["s9EquatableP", "jsonObject"]
@@ -379,9 +406,11 @@ depends-member:
 - !private ["s9EquatableP", "mutableContainers"]
 - ["s9EquatableP", "numberOfSections"]
 - ["s9EquatableP", "numberOfSectionsInTableView"]
+- !private ["s9EquatableP", "performSegue"]
 - !private ["s9EquatableP", "print"]
 - !private ["s9EquatableP", "reloadData"]
 - !private ["s9EquatableP", "resume"]
+- !private ["s9EquatableP", "row"]
 - ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s9EquatableP", "scrollViewDidEndDecelerating"]
 - ["s9EquatableP", "scrollViewDidEndDragging"]
@@ -427,6 +456,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "item"]
 - !private ["s25ExpressibleByArrayLiteralP", "locationOfEvent"]
 - !private ["s25ExpressibleByArrayLiteralP", "mutableContainers"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "titleOfEvent"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -462,11 +492,14 @@ depends-member:
 - !private ["s8HashableP", "dequeueReusableCell"]
 - !private ["s8HashableP", "descLabel"]
 - !private ["s8HashableP", "descOfEvent"]
+- !private ["s8HashableP", "destination"]
+- !private ["s8HashableP", "event"]
 - !private ["s8HashableP", "events"]
 - !private ["s8HashableP", "fetchEvents"]
 - !private ["s8HashableP", "image"]
 - ["s8HashableP", "indexPathForPreferredFocusedView"]
 - ["s8HashableP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["s8HashableP", "indexPathForSelectedRow"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "item"]
 - !private ["s8HashableP", "jsonObject"]
@@ -477,9 +510,11 @@ depends-member:
 - !private ["s8HashableP", "medium"]
 - ["s8HashableP", "numberOfSections"]
 - ["s8HashableP", "numberOfSectionsInTableView"]
+- !private ["s8HashableP", "performSegue"]
 - !private ["s8HashableP", "print"]
 - !private ["s8HashableP", "reloadData"]
 - !private ["s8HashableP", "resume"]
+- !private ["s8HashableP", "row"]
 - ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s8HashableP", "scrollViewDidEndDecelerating"]
 - ["s8HashableP", "scrollViewDidEndDragging"]
@@ -509,6 +544,7 @@ depends-member:
 - ["s8HashableP", "viewForZoomingInScrollView"]
 - ["s8HashableP", ""]
 - !private ["10Foundation9IndexPathV", "item"]
+- !private ["10Foundation9IndexPathV", "row"]
 - !private ["So17JSONSerializationC", "jsonObject"]
 - !private ["10Foundation6LocaleV", "init"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -521,6 +557,7 @@ depends-member:
 - !private ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "item"]
 - !private ["s17MutableCollectionP", "locationOfEvent"]
+- !private ["s17MutableCollectionP", "row"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["s17MutableCollectionP", "titleOfEvent"]
 - !private ["So8NSCodingP", "DateFormatter"]
@@ -539,16 +576,19 @@ depends-member:
 - !private ["So8NSCodingP", "dateStyle"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "descLabel"]
+- !private ["So8NSCodingP", "event"]
 - !private ["So8NSCodingP", "events"]
 - !private ["So8NSCodingP", "fetchEvents"]
 - !private ["So8NSCodingP", "image"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So8NSCodingP", "indexPathForSelectedRow"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "locale"]
 - !private ["So8NSCodingP", "locationLabel"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
+- !private ["So8NSCodingP", "performSegue"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "reloadData"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -593,6 +633,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "URLRequest"]
 - !private ["So26NSExtensionRequestHandlingP", "URLSession"]
+- !private ["So26NSExtensionRequestHandlingP", "event"]
 - !private ["So26NSExtensionRequestHandlingP", "events"]
 - !private ["So26NSExtensionRequestHandlingP", "fetchEvents"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
@@ -600,6 +641,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
+- !private ["So26NSExtensionRequestHandlingP", "performSegue"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
@@ -634,9 +676,11 @@ depends-member:
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "JSONSerialization"]
 - !private ["So8NSObjectC", "Locale"]
+- !private ["So8NSObjectC", "ShowDetailsController"]
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "TimeZone"]
 - !private ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "URL"]
@@ -652,12 +696,15 @@ depends-member:
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - !private ["So8NSObjectC", "descLabel"]
 - !private ["So8NSObjectC", "descOfEvent"]
+- !private ["So8NSObjectC", "destination"]
 - ["So8NSObjectC", "downloadImage"]
+- !private ["So8NSObjectC", "event"]
 - ["So8NSObjectC", "events"]
 - ["So8NSObjectC", "fetchEvents"]
 - !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So8NSObjectC", "indexPathForSelectedRow"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "jsonObject"]
 - !private ["So8NSObjectC", "locale"]
@@ -666,6 +713,8 @@ depends-member:
 - !private ["So8NSObjectC", "main"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
+- !private ["So8NSObjectC", "performSegue"]
+- ["So8NSObjectC", "prepare"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "resume"]
@@ -715,11 +764,14 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "dequeueReusableCell"]
 - !private ["So16NSObjectProtocolP", "descLabel"]
 - !private ["So16NSObjectProtocolP", "descOfEvent"]
+- !private ["So16NSObjectProtocolP", "destination"]
+- !private ["So16NSObjectProtocolP", "event"]
 - !private ["So16NSObjectProtocolP", "events"]
 - !private ["So16NSObjectProtocolP", "fetchEvents"]
 - !private ["So16NSObjectProtocolP", "image"]
 - ["So16NSObjectProtocolP", "indexPathForPreferredFocusedView"]
 - ["So16NSObjectProtocolP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So16NSObjectProtocolP", "indexPathForSelectedRow"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "jsonObject"]
 - !private ["So16NSObjectProtocolP", "locale"]
@@ -728,6 +780,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "main"]
 - ["So16NSObjectProtocolP", "numberOfSections"]
 - ["So16NSObjectProtocolP", "numberOfSectionsInTableView"]
+- !private ["So16NSObjectProtocolP", "performSegue"]
 - !private ["So16NSObjectProtocolP", "print"]
 - !private ["So16NSObjectProtocolP", "reloadData"]
 - !private ["So16NSObjectProtocolP", "resume"]
@@ -771,6 +824,7 @@ depends-member:
 - !private ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "item"]
 - !private ["s22RandomAccessCollectionP", "locationOfEvent"]
+- !private ["s22RandomAccessCollectionP", "row"]
 - !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s22RandomAccessCollectionP", "titleOfEvent"]
 - !private ["s26RangeReplaceableCollectionP", "append"]
@@ -787,6 +841,7 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "DateFormatter"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "item"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["10Foundation20ReferenceConvertibleP", "toString"]
 - !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "count"]
@@ -795,9 +850,11 @@ depends-member:
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "item"]
 - !private ["s8SequenceP", "locationOfEvent"]
+- !private ["s8SequenceP", "row"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s8SequenceP", "titleOfEvent"]
 - !private ["s10SetAlgebraP", "mutableContainers"]
+- !private ["5Maruf21ShowDetailsControllerC", "event"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["So13DateFormatterC5StyleO", "medium"]
@@ -820,6 +877,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "descLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "indexPathForSelectedRow"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "locationLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "print"]
@@ -835,6 +893,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "descLabel"]
 - !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "indexPathForSelectedRow"]
 - !private ["So12UIAppearanceP", "locationLabel"]
 - !private ["So12UIAppearanceP", "print"]
 - !private ["So12UIAppearanceP", "reloadData"]
@@ -853,15 +912,18 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "dateLabel"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "descLabel"]
+- !private ["So21UIAppearanceContainerP", "event"]
 - !private ["So21UIAppearanceContainerP", "events"]
 - !private ["So21UIAppearanceContainerP", "fetchEvents"]
 - !private ["So21UIAppearanceContainerP", "image"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So21UIAppearanceContainerP", "indexPathForSelectedRow"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "locationLabel"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
+- !private ["So21UIAppearanceContainerP", "performSegue"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "reloadData"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
@@ -896,6 +958,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "URLRequest"]
 - !private ["So18UIContentContainerP", "URLSession"]
+- !private ["So18UIContentContainerP", "event"]
 - !private ["So18UIContentContainerP", "events"]
 - !private ["So18UIContentContainerP", "fetchEvents"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
@@ -903,6 +966,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
+- !private ["So18UIContentContainerP", "performSegue"]
 - !private ["So18UIContentContainerP", "print"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
@@ -935,12 +999,14 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "descLabel"]
 - !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "indexPathForSelectedRow"]
 - !private ["So17UICoordinateSpaceP", "locationLabel"]
 - !private ["So17UICoordinateSpaceP", "print"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "titleLabel"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- !private ["So23UIDataSourceTranslatingP", "indexPathForSelectedRow"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So13UIDynamicItemP", "DispatchQueue"]
 - !private ["So13UIDynamicItemP", "UIImage"]
@@ -951,6 +1017,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "descLabel"]
 - !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "indexPathForSelectedRow"]
 - !private ["So13UIDynamicItemP", "locationLabel"]
 - !private ["So13UIDynamicItemP", "print"]
 - !private ["So13UIDynamicItemP", "reloadData"]
@@ -969,15 +1036,18 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "dateLabel"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "descLabel"]
+- !private ["So18UIFocusEnvironmentP", "event"]
 - !private ["So18UIFocusEnvironmentP", "events"]
 - !private ["So18UIFocusEnvironmentP", "fetchEvents"]
 - !private ["So18UIFocusEnvironmentP", "image"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So18UIFocusEnvironmentP", "indexPathForSelectedRow"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "locationLabel"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
+- !private ["So18UIFocusEnvironmentP", "performSegue"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1012,6 +1082,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "descLabel"]
 - !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "indexPathForSelectedRow"]
 - !private ["So11UIFocusItemP", "locationLabel"]
 - !private ["So11UIFocusItemP", "print"]
 - !private ["So11UIFocusItemP", "reloadData"]
@@ -1046,15 +1117,18 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "dateLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "descLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "event"]
 - !private ["So30UIPasteConfigurationSupportingP", "events"]
 - !private ["So30UIPasteConfigurationSupportingP", "fetchEvents"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "indexPathForSelectedRow"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "locationLabel"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1089,9 +1163,11 @@ depends-member:
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "JSONSerialization"]
 - !private ["So11UIResponderC", "Locale"]
+- !private ["So11UIResponderC", "ShowDetailsController"]
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "TimeZone"]
 - !private ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "URL"]
@@ -1101,15 +1177,19 @@ depends-member:
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "descLabel"]
 - ["So11UIResponderC", "downloadImage"]
+- !private ["So11UIResponderC", "event"]
 - ["So11UIResponderC", "events"]
 - ["So11UIResponderC", "fetchEvents"]
 - !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So11UIResponderC", "indexPathForSelectedRow"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "locationLabel"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
+- !private ["So11UIResponderC", "performSegue"]
+- ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "reloadData"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
@@ -1147,15 +1227,18 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "dateLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "descLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "event"]
 - !private ["So30UIResponderStandardEditActionsP", "events"]
 - !private ["So30UIResponderStandardEditActionsP", "fetchEvents"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So30UIResponderStandardEditActionsP", "indexPathForSelectedRow"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "locationLabel"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
+- !private ["So30UIResponderStandardEditActionsP", "performSegue"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1182,6 +1265,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So12UIScrollViewC", "indexPathForSelectedRow"]
 - !private ["So12UIScrollViewC", "reloadData"]
 - !private ["So20UIScrollViewDelegateP", "DateFormatter"]
 - !private ["So20UIScrollViewDelegateP", "DispatchQueue"]
@@ -1198,6 +1282,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
+- !private ["So20UIScrollViewDelegateP", "performSegue"]
 - !private ["So20UIScrollViewDelegateP", "print"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
@@ -1220,6 +1305,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "indexPathForSelectedRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
 - !private ["So16UIStateRestoringP", "DateFormatter"]
 - !private ["So16UIStateRestoringP", "DispatchQueue"]
@@ -1230,6 +1316,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "URLRequest"]
 - !private ["So16UIStateRestoringP", "URLSession"]
+- !private ["So16UIStateRestoringP", "event"]
 - !private ["So16UIStateRestoringP", "events"]
 - !private ["So16UIStateRestoringP", "fetchEvents"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
@@ -1237,6 +1324,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
+- !private ["So16UIStateRestoringP", "performSegue"]
 - !private ["So16UIStateRestoringP", "print"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
@@ -1259,7 +1347,9 @@ depends-member:
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
+- !private ["So11UITableViewC", "indexPathForSelectedRow"]
 - !private ["So11UITableViewC", "reloadData"]
 - !private ["So15UITableViewCellC", "dateLabel"]
 - !private ["So15UITableViewCellC", "descLabel"]
@@ -1280,6 +1370,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
+- !private ["So21UITableViewDataSourceP", "performSegue"]
 - !private ["So21UITableViewDataSourceP", "print"]
 - ["So21UITableViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDecelerating"]
@@ -1316,6 +1407,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
+- !private ["So19UITableViewDelegateP", "performSegue"]
 - !private ["So19UITableViewDelegateP", "print"]
 - ["So19UITableViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDecelerating"]
@@ -1350,15 +1442,18 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "dateLabel"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "descLabel"]
+- !private ["So18UITraitEnvironmentP", "event"]
 - !private ["So18UITraitEnvironmentP", "events"]
 - !private ["So18UITraitEnvironmentP", "fetchEvents"]
 - !private ["So18UITraitEnvironmentP", "image"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So18UITraitEnvironmentP", "indexPathForSelectedRow"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "locationLabel"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
+- !private ["So18UITraitEnvironmentP", "performSegue"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "reloadData"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1395,6 +1490,7 @@ depends-member:
 - !private ["So6UIViewC", "descLabel"]
 - ["So6UIViewC", "downloadImage"]
 - !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "indexPathForSelectedRow"]
 - !private ["So6UIViewC", "locationLabel"]
 - !private ["So6UIViewC", "print"]
 - !private ["So6UIViewC", "reloadData"]
@@ -1409,13 +1505,16 @@ depends-member:
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "JSONSerialization"]
 - !private ["So16UIViewControllerC", "Locale"]
+- !private ["So16UIViewControllerC", "ShowDetailsController"]
 - !private ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "TimeZone"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - !private ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "URLRequest"]
 - !private ["So16UIViewControllerC", "URLSession"]
+- !private ["So16UIViewControllerC", "event"]
 - ["So16UIViewControllerC", "events"]
 - ["So16UIViewControllerC", "fetchEvents"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
@@ -1423,6 +1522,8 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
+- !private ["So16UIViewControllerC", "performSegue"]
+- ["So16UIViewControllerC", "prepare"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
@@ -1460,8 +1561,10 @@ depends-member:
 - ["5Maruf14ViewControllerC", "Int"]
 - !private ["5Maruf14ViewControllerC", "JSONSerialization"]
 - !private ["5Maruf14ViewControllerC", "Locale"]
+- !private ["5Maruf14ViewControllerC", "ShowDetailsController"]
 - !private ["5Maruf14ViewControllerC", "String"]
 - !private ["5Maruf14ViewControllerC", "TimeZone"]
+- ["5Maruf14ViewControllerC", "UIStoryboardSegue"]
 - ["5Maruf14ViewControllerC", "UITableView"]
 - ["5Maruf14ViewControllerC", "UITableViewCell"]
 - !private ["5Maruf14ViewControllerC", "URL"]
@@ -1475,6 +1578,8 @@ depends-member:
 - ["5Maruf14ViewControllerC", "init"]
 - ["5Maruf14ViewControllerC", "numberOfSections"]
 - ["5Maruf14ViewControllerC", "numberOfSectionsInTableView"]
+- !private ["5Maruf14ViewControllerC", "performSegue"]
+- ["5Maruf14ViewControllerC", "prepare"]
 - !private ["5Maruf14ViewControllerC", "print"]
 - ["5Maruf14ViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["5Maruf14ViewControllerC", "scrollViewDidEndDecelerating"]
@@ -1511,6 +1616,7 @@ depends-member:
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "item"]
 - !private ["s23_BidirectionalIndexableP", "locationOfEvent"]
+- !private ["s23_BidirectionalIndexableP", "row"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "titleOfEvent"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "DispatchQueue"]
@@ -1522,6 +1628,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "descLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "indexPathForSelectedRow"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "locationLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "print"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
@@ -1551,6 +1658,7 @@ depends-member:
 - !private ["s10_IndexableP", "init"]
 - !private ["s10_IndexableP", "item"]
 - !private ["s10_IndexableP", "locationOfEvent"]
+- !private ["s10_IndexableP", "row"]
 - !private ["s10_IndexableP", "subscript"]
 - !private ["s10_IndexableP", "titleOfEvent"]
 - !private ["s14_IndexableBaseP", "append"]
@@ -1560,6 +1668,7 @@ depends-member:
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "item"]
 - !private ["s14_IndexableBaseP", "locationOfEvent"]
+- !private ["s14_IndexableBaseP", "row"]
 - !private ["s14_IndexableBaseP", "subscript"]
 - !private ["s14_IndexableBaseP", "titleOfEvent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
@@ -1582,11 +1691,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "descLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "descOfEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "event"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "events"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchEvents"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForSelectedRow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "jsonObject"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locale"]
@@ -1595,6 +1707,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
@@ -1632,6 +1745,7 @@ depends-member:
 - !private ["s17_MutableIndexableP", "init"]
 - !private ["s17_MutableIndexableP", "item"]
 - !private ["s17_MutableIndexableP", "locationOfEvent"]
+- !private ["s17_MutableIndexableP", "row"]
 - !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s17_MutableIndexableP", "titleOfEvent"]
 - !private ["s21_ObjectiveCBridgeableP", "DateFormatter"]
@@ -1640,6 +1754,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "item"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "toString"]
 - !private ["s22_RandomAccessIndexableP", "append"]
@@ -1649,6 +1764,7 @@ depends-member:
 - !private ["s22_RandomAccessIndexableP", "init"]
 - !private ["s22_RandomAccessIndexableP", "item"]
 - !private ["s22_RandomAccessIndexableP", "locationOfEvent"]
+- !private ["s22_RandomAccessIndexableP", "row"]
 - !private ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s22_RandomAccessIndexableP", "titleOfEvent"]
 - !private ["s26_RangeReplaceableIndexableP", "append"]
@@ -1718,6 +1834,7 @@ depends-nominal:
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s8SequenceP"
 - !private "s10SetAlgebraP"
+- !private "5Maruf21ShowDetailsControllerC"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "So13DateFormatterC5StyleO"
@@ -1747,6 +1864,7 @@ depends-nominal:
 - "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
 - !private "So11UITableViewC"
 - !private "So15UITableViewCellC"
 - "So21UITableViewDataSourceP"
@@ -1784,117 +1902,118 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
-- "/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "168bff93889525147045fe68e416b449"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "d8bbe9d14e622ff5d04deecaded9a09b"

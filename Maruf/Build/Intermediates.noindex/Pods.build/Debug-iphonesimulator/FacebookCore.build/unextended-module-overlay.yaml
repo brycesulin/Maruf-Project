@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules'
+    'name': '/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/brycesulin/Desktop/Github Projects/Maruf/iOS/Maruf/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FacebookCore.build/unextended-module.modulemap',
+      'external-contents': '/Users/brycesulin/Desktop/Github Projects/iOS Personal Projects/Maruf Personal*/Maruf/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FacebookCore.build/unextended-module.modulemap',
     }]
   }]
 }

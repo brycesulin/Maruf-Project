@@ -6,7 +6,7 @@
 	<dict>
 		<key>GTMOAuth2ViewTouch.nib</key>
 		<data>
-		MX3CAA20ffa+f4Y1tdtaVwvfXcA=
+		zcXY7jo4ITut5C4TcuMzICWLXIs=
 		</data>
 		<key>Headers/GTMOAuth2-umbrella.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+yl/h23ZF4OaJSpqOGJz7BON8WU=
+		NCd+zVuYEbDFaAqMtU9Qu1D+Md4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MX3CAA20ffa+f4Y1tdtaVwvfXcA=
+			zcXY7jo4ITut5C4TcuMzICWLXIs=
 			</data>
 			<key>hash2</key>
 			<data>
-			IVs1TNUcwxmiVTkCaO2mSMoOGb7Dy0qgun0faK8X9MY=
+			8iCOpROsxmsr1ZK3HeXZr0Qt3PKxp7bjwyO7i2+Dy5A=
 			</data>
 		</dict>
 		<key>Headers/GTMOAuth2-umbrella.h</key>

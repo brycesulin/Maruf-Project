@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/FacebookCore-Swift.h</key>
 		<data>
-		+1D1XQp+VSmnoTuEoEp8LuZBWqc=
+		sXazUmQdv2KbpG1ZonyVfBWZ8Gs=
 		</data>
 		<key>Headers/FacebookCore-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Hwz9gmJYrwNILfmyfY0SNZq1SaE=
+		elSA7Fx6POkSlOOTr1cGtBGR0yU=
 		</data>
 		<key>Modules/FacebookCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		fLjbzd4bJsKgkpiFdl2gndBe728=
+		cWQX/j1Gy0oei1dkqxhESG9FaBQ=
 		</data>
 		<key>Modules/FacebookCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		3ScQyXFQ7vLztcqpGAJlYXvIZO8=
+		fNQV/W2atqSbZ5qJSf61VrlNMzg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+1D1XQp+VSmnoTuEoEp8LuZBWqc=
+			sXazUmQdv2KbpG1ZonyVfBWZ8Gs=
 			</data>
 			<key>hash2</key>
 			<data>
-			9rcxhhkvr/2NiKgi8jBcPNZc/1uKcMuYdH4fkHqNurw=
+			u50seCSJPgeKYNP4y4tsDi05PsOFvlVFMTbeHW0bBtE=
 			</data>
 		</dict>
 		<key>Headers/FacebookCore-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fLjbzd4bJsKgkpiFdl2gndBe728=
+			cWQX/j1Gy0oei1dkqxhESG9FaBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			iXh6WkL81T6CEgsbXAkFzyRM9Pkstp9s8ZtZw3Pqlcc=
+			FSicKJ/6dYj7TuKuO/6KnB4IYHISQYiad0koLgLkK+4=
 			</data>
 		</dict>
 		<key>Modules/FacebookCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3ScQyXFQ7vLztcqpGAJlYXvIZO8=
+			fNQV/W2atqSbZ5qJSf61VrlNMzg=
 			</data>
 			<key>hash2</key>
 			<data>
-			p0DjkCxR2MwNYwxeBB0+41uBZoDLvVOMvP4BrK2EN+U=
+			sMQcnbwHiGgMuf6VAsPuV2mEiH/Jet9Jhwb5vq8C7h8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
