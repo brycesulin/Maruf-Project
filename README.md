@@ -1,5 +1,5 @@
 # Maruf-Project
-iOS Software Engineering Project that uses Firebase (Storing Facebook/Gmail logins), Google Calendar (Events), and Heroku (Server hosting the Events)
+iOS Event-Based Software Engineering Project that uses Firebase (Storing Facebook/Gmail logins), Google Calendar (Events), and Heroku (Server hosting the Events)
 
 Screenshots:
 
