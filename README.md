@@ -1,6 +1,6 @@
 # Maruf-Project
 iOS Software Engineering Project that uses Firebase (Storing Facebook/Gmail logins), Google Calendar (Events), and Heroku (Server hosting the Events)
-s
+
 Screenshots:
 
 <img width="379" alt="screen shot 2018-02-24 at 7 23 02 am" src="https://user-images.githubusercontent.com/20143504/36630911-fd095284-1933-11e8-8470-fc47d61d0434.png">
