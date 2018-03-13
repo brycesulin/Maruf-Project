@@ -18,5 +18,3 @@ Screenshots:
 <img width="402" alt="screen shot 2017-12-10 at 8 23 01 am" src="https://user-images.githubusercontent.com/20143504/33805866-d618d824-dd84-11e7-8d7b-df3b295393e5.png">
 
 <img width="396" alt="screen shot 2017-12-10 at 8 23 38 am" src="https://user-images.githubusercontent.com/20143504/33805867-d9fc720c-dd84-11e7-857d-7a73647e4a39.png">
-
-<img width="401" alt="screen shot 2017-12-10 at 8 24 28 am" src="https://user-images.githubusercontent.com/20143504/33805872-e5b104c8-dd84-11e7-99d6-71974b3db624.png">
